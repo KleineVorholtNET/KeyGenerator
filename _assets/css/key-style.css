@@ -1,0 +1,15 @@
+.key-span {
+    font-family: 'PT Mono', monospace;
+    letter-spacing: 0.75px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.key-card {
+    text-align: center;
+}
+
+.key-section-header-alt {
+    .text-muted;
+    font-size: 12px;
+}
