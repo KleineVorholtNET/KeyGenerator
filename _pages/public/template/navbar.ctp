@@ -28,13 +28,21 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#!">About</a>
+                            <a class="nav-link" href="<?= $config['host']['url'] ?>">Home</a>
+                        </li>
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!">Hash-Generator</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://kleine-vorholt.net" target="_blank">Company</a>
+                            <a class="nav-link" href="#!">API</a>
                         </li>
+                        -->
                     </ul>
                     <ul class="navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= $config['host']['url'] . 'changelog' ?>">Changelog</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Theme <span class="caret"></span></a>
                             <div class="dropdown-menu" aria-labelledby="themes">

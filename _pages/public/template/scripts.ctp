@@ -20,4 +20,8 @@
 <!-- // SCRIPTS // -->
         <script src="<?= $config['host']['url'] . '_vendor/jquery/jquery.min.js' ?>"></script>
         <script src="<?= $config['host']['url'] . '_vendor/bootstrap/js/bootstrap.bundle.min.js' ?>"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="<?= $config['host']['url'] . '_vendor/prismjs/prism.js' ?>" data-manual></script>
+        <script src="<?= $config['host']['url'] . '_assets/js/main.js' ?>"></script>
+        <script src="<?= $config['host']['url'] . '_assets/js/crypto.js' ?>"></script>
+        <script src="<?= $config['host']['url'] . '_assets/js/key-download.js' ?>"></script>

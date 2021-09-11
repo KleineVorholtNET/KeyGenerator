@@ -50,5 +50,58 @@
         <!-- // STYLESHEETS // -->
         <link rel="stylesheet" href="<?= $config['host']['url'] . '_assets/themes/' .  ($_COOKIE['KEYGEN_theme'] ?? $config['theme']['default_theme']) .'/bootstrap.min.css' ?>">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="<?= $config['host']['url'] . '_assets/css/main.css' ?>">
+        <link rel="stylesheet" href="<?= $config['host']['url'] . '_vendor/prismjs/prism-okaidia.css' ?>">
+        <link rel="stylesheet" href="<?= $config['host']['url'] . '_assets/css/key-style.css' ?>">
+        <style>
+            #loader {
+                transition: all .3s ease-in-out;
+                opacity: 1;
+                visibility: visible;
+                position: fixed;
+                height: 100vh;
+                width: 100%;
+                background: #fff;
+                z-index: 70000;
+            }
+
+            #loader.fadeOut {
+                opacity: 0;
+                visibility: hidden
+            }
+
+            .layer-center {
+                position: absolute;
+                top: calc(50% - 12px);
+                left: calc(50% - 94px);
+            }
+        </style>
+
+        <!-- // ANALYTICS // -->
+        <script type="text/javascript">
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["setCookieDomain", "*.key-generator.kleine-vorholt.eu"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//analytics.kleine-vorholt.eu/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '4']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
 
         <!-- // NOJS // -->
+        <noscript>
+            <style>
+                body {
+                    padding-top: 0;
+                }
+            </style>
+            <div id="loader">
+                <span class="layer-center" style="font-weight: bold">Please enable JavaScript!</span>
+            </div>
+            <p><img src="//analytics.kleine-vorholt.eu/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p>
+        </noscript>
