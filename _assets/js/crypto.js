@@ -6,18 +6,6 @@ const specialString = '`~!@#$%^&*()-=_+[]{}|;\':",./<>?';
 const hexString = '123456789ABCDEF';
 
 /**
- * Generate some randomness
- * @returns {number} Random number
- */
-function random() {
-    const { crypto, Uint32Array } = window;
-    if (typeof crypto?.getRandomValues === 'function' && typeof Uint32Array === 'function') {
-        return window.crypto.getRandomValues(new Uint32Array(1))[0] / 4294967295;
-    }
-    return Math.random();
-}
-
-/**
  * Generates a random string
  * @param length Length of String
  * @param lowerCase Should lowercase letters included
@@ -43,7 +31,7 @@ function generateKey(length, lowerCase, upperCase, numbers, special, hex) {
 
     // Build Key
     for (let i = 0; i < length; i++) {
-        key += letters[Math.floor(random() * letters.length)];
+        key += letters[Math.floor(Math.random() * letters.length)];
     }
 
     // Return key

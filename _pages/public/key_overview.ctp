@@ -286,7 +286,7 @@
 
 
         <?php require_once __DIR__ . '/template/scripts.ctp' ?>
-        <script src="<?= $config['host']['url'] . '_assets/js/overviewjs.js' ?>"></script>
+        <script src="<?= $config['host']['url'] . '_assets/js/overviewjs.min.js' ?>"></script>
         <script type="text/javascript">
             $(document).ready(function () {
                 generateKeys();
