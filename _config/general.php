@@ -34,14 +34,14 @@ $config['host']['fqdn'] = 'key-generator.kleine-vorholt.eu';
 $config['host']['protocol'] = 'https://';
 $config['host']['path'] = '/';
 
-$config['theme']['default_theme'] = 'cosmo';
+$config['theme']['default_theme'] = 'pulse';
 $config['theme']['available_themes'] = [
     // 'cerulean'  => 'Cerulean',
     'darkly'    => 'Darkly',
     // 'litera'    => 'Litera',
     // 'materia'   => 'Materia',
     'pulse'     => 'Pulse',
-    'simplex'   => 'Simplex',
+    // 'simplex'   => 'Simplex',
     'solar'     => 'Solar',
     'united'    => 'United',
     'zephyr'    => 'Zephyr',

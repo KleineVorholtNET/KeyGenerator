@@ -49,6 +49,7 @@ $routerConfiguration = new RouterConfig();
 
 // Add routes
 $routerConfiguration->addRoute('/', '_pages/public/key_overview.ctp');
+$routerConfiguration->addRoute('/changelog', '_pages/public/changelog.ctp');
 $routerConfiguration->addRoute('/update-theme/{THEMEID}', '_scripts/update-theme.php');
 
 // Create router
