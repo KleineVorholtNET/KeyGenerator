@@ -50,6 +50,7 @@
         <!-- // STYLESHEETS // -->
         <link rel="stylesheet" href="<?= $config['host']['url'] . '_assets/themes/' .  ($_COOKIE['KEYGEN_theme'] ?? $config['theme']['default_theme']) .'/bootstrap.min.css' ?>">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="<?= $config['host']['url'] . '_assets/css/main.css' ?>">
         <link rel="stylesheet" href="<?= $config['host']['url'] . '_vendor/prismjs/prism-okaidia.css' ?>">
         <link rel="stylesheet" href="<?= $config['host']['url'] . '_assets/css/key-style.css' ?>">

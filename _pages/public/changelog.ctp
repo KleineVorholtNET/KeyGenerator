@@ -55,14 +55,37 @@
                     <div class="col-md">
                         <div class="accordion" id="changelogAccordion">
 
+                            <!-- // Version: 1.1.0 // -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading_version_1_1_0">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_version_1_1_0" aria-expanded="true" aria-controls="collapse_version_1_0_0">
+                                        <span class="fw-bold">1.1.0</span>&nbsp;- September 11, 2021&nbsp;<span class="badge rounded-pill bg-success">Latest</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse_version_1_1_0" class="accordion-collapse collapse show" aria-labelledby="heading_version_1_1_0" data-bs-parent="#changelogAccordion">
+                                    <div class="accordion-body">
+                                        <div class="changelog-version-header">
+                                            <h4>1.1.0 <span class="text-muted fs-6">Release - September 11, 2021</span></h4>
+                                        </div>
+                                        <div class="changelog-version-body">
+                                            <span class="fw-bold">New Features / Added Content</span>
+                                            <ul>
+                                                <li>Added short license keys to keys</li>
+                                                <li>Added click & copy mode to keys (Copy key per click)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- // Version: 1.0.0 // -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="heading_version_1_0_0">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_version_1_0_0" aria-expanded="true" aria-controls="collapse_version_1_0_0">
-                                       <span class="fw-bold">1.0.0</span>&nbsp;- September 11, 2021&nbsp;<span class="badge rounded-pill bg-success">Latest</span>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_version_1_0_0" aria-expanded="false" aria-controls="collapse_version_1_0_0">
+                                       <span class="fw-bold">1.0.0</span>&nbsp;- September 11, 2021
                                     </button>
                                 </h2>
-                                <div id="collapse_version_1_0_0" class="accordion-collapse collapse show" aria-labelledby="heading_version_1_0_0" data-bs-parent="#changelogAccordion" style="">
+                                <div id="collapse_version_1_0_0" class="accordion-collapse collapsed collapse" aria-labelledby="heading_version_1_0_0" data-bs-parent="#changelogAccordion">
                                     <div class="accordion-body">
                                         <div class="changelog-version-header">
                                             <h4>1.0.0 <span class="text-muted fs-6">Release - September 11, 2021</span></h4>

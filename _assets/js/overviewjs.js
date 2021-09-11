@@ -44,6 +44,13 @@ function generateLicenseKeys() {
     setKey('license_key_3', getKeyType('long_license_key'));
 }
 
+function generateShortLicenseKeys() {
+    setKey('short_license_key_0', getKeyType('short_license_key'));
+    setKey('short_license_key_1', getKeyType('short_license_key'));
+    setKey('short_license_key_2', getKeyType('short_license_key'));
+    setKey('short_license_key_3', getKeyType('short_license_key'));
+}
+
 function generateRememberablePasswords() {
     setKey('rememberable_password_0', getKeyType('rememberable_password'));
     setKey('rememberable_password_1', getKeyType('rememberable_password'));
@@ -75,4 +82,11 @@ function generateKeys() {
     generateRememberablePasswords();
     generateStrongPasswords();
     generateUltraStrongPasswords();
+    generateShortLicenseKeys();
+}
+
+function copyKeyToClipboard(id) {
+    copyToClipboard(id);
+    let modal = $('#copyClipboardModal').modal('show')
+    setTimeout(th => $('#copyClipboardModal').modal('hide'), 3500);
 }
